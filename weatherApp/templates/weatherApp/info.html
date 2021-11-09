@@ -1,0 +1,20 @@
+{% extends "weatherApp/base.html" %}
+{% block content %}
+<div  class="container mt-5">
+    <h1 style="font-family: 'Pacifico', cursive; color:white;" class="text-center alert bg-primary">Weather Report</h1>
+    <div class="container-sm alert bg-warning">
+        <h3 class="text-center"><strong> City Name:</strong> {{city}}, {{country_code}}</h3>
+          <div class="row">
+        <div class="col p-5">
+            <h6 class="lead text-left"><strong> Temperature: </strong>{{temp}}</h6>
+            <h6 class="lead text-left"><strong> Pressure: </strong>{{pressure}}</h6>
+            <h6 class="lead text-left"><strong> Humidity: </strong>{{humidity}}</h6>
+            <h6 class="lead text-left"><strong> Co-ordinates: </strong>{{coordinate}}</h6>
+        </div>
+        <div class="col ">
+
+        </div>
+    </div>
+    </div>
+</div>
+{% endblock content %}
